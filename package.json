@@ -1,0 +1,29 @@
+{
+  "name": "breakout-like-server",
+  "version": "1.0.0",
+  "description": "Ranking server for breakout-like.",
+  "main": "built/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckkpd/breakout-like-server.git"
+  },
+  "author": "ckkpd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ckkpd/breakout-like-server/issues"
+  },
+  "homepage": "https://github.com/ckkpd/breakout-like-server#readme",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "@types/nedb": "^1.8.7",
+    "body-parser": "^1.19.0",
+    "eslint": "^5.16.0",
+    "express": "^4.16.4",
+    "nedb": "^1.8.0",
+    "typescript": "^3.4.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "db": "db/score.json",
+    "port": 8080,
+    "resetEndpoint": "/reset",
+    "removeEndpoint": "/remove"
+}
