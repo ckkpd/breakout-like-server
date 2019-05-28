@@ -15,7 +15,7 @@ router.post('/add', async (req, res) => {
         res.status(400).json({status: "bad", error: "too long name"})
         return
     }
-    await db.insert([{score}], (e, v) => {
+    await db.insert([{score: score.score, name: score.name}], (e, v) => {
         if(e) res.status(400).json({status: "bad", error: e})
         else res.json({status: "ok"})
     })
