@@ -29,7 +29,8 @@ router.get('/all', async (req, res) => {
 })
 
 router.get('/latest', async (req, res) => {
-    await db.find({}).sort({score: -1}).limit(10).exec(async (e, v) => {
+    let n = req.body.n || 10
+    await db.find({}).sort({score: -1}).limit(n).exec(async (e, v) => {
         if(e) res.json({status: "error", error: e})
         else res.json(v)
     })
