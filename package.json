@@ -4,7 +4,7 @@
   "description": "Ranking server for breakout-like.",
   "main": "built/",
   "scripts": {
-    "test": "echo ok && exit 0"
+    "test": "echo ok && exit 0",
     "build": "tsc --build tsconfig.json"
   },
   "repository": {
